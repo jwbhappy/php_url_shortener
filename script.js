@@ -21,7 +21,7 @@ if (localStorage.latestLink) {
 
 shortenBtn.onclick = () => {
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'url_control.php', true);
+    xhr.open('POST', '/app/url_control.php', true);
     xhr.onload = () => {
         if(xhr.readyState == 4 && xhr.status == 200) {
             let data = xhr.response;

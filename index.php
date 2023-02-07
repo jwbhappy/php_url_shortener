@@ -1,7 +1,7 @@
 <?php
-    include 'config.php';
-    include 'link_generator.php';
-    include 'redirection.php'
+    include 'app/config.php';
+    include 'app/link_generator.php';
+    include 'app/redirection.php'
 ?>
 
 <!DOCTYPE html>
