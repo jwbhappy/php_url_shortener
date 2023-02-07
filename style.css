@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: 'Martian Mono', monospace;
+}
+
+body {
+    background-color: rgb(230, 233, 236);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0px;
+    font-size: 0.9rem;
+}
+
+.main-page-title {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 60px 0px;
+}
+
+.main-page-title h1 {
+    color: rgb(23, 23, 23);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.form form {
+	display: flex;
+    flex-direction: column;
+	width: 100%;
+	max-width: 420px;
+    align-items: center;
+}
+
+.form form input {
+	display: block;
+	padding: 16px 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+
+	appearance: none;
+	border: 1px solid rgb(79, 79, 79);
+	outline: none;
+	background: none;
+
+	background-color: #FFF;
+	border-radius: 8px;
+	
+	width: 100%;
+
+	color: #666666;
+}
+
+.form form input:focus{
+    border: 2px solid rgb(79, 79, 79);
+}
+
+.form .logininput {
+	margin-top: 10px;
+}
+
+.form form input[type="submit"] {
+	display: block;
+	padding: 10px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+
+	background-color: #32a31e;
+	color: #FFF;
+	font-weight: 700;
+	border-radius: 0px 0px 8px 8px;
+    width: 30%;
+}
+
+.form form input[type="submit"]:hover {
+	background-color: #268c14;
+}
+
+.message {
+	text-align: center;
+}
+
+.urls {
+	display: block;
+	margin-top: 20px;
+}
+
+.urls .url {
+	display: flex;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto 16px;
+	border-radius: 8px;
+	padding: 12px 16px;
+	background-color: #FFF;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.urls .hidden {
+	visibility: hidden;
+}
+
+.urls .url .id {
+	flex: 1 1 100px;
+	max-width: 100px;
+	color: #666666;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.urls .url .short-url,
+.urls .url .long-url {
+	flex: 1 1 0%;
+}
+
+.urls .url a {
+	color: #8C38FF;
+	text-decoration: none;
+}
+
+.urls .url .long-url {
+	color: #888;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	font-size: 13px;
+}
