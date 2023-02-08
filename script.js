@@ -4,6 +4,7 @@ shortenBtn = form.querySelector('#submit');
 shortUrl = document.querySelector('.short-url');
 longUrl = document.querySelector('.long-url');
 url = document.querySelector('.url');
+copyIcon = document.querySelector('.copy-icon');
 form.onsubmit = (e) => {
     e.preventDefault();
 }
@@ -15,6 +16,11 @@ if (localStorage.latestLink) {
     let links = JSON.parse( localStorage.latestLink );
     shortUrl.innerHTML = `<a href="http://localhost:3000/${links.short}">http://localhost:3000/${links.short}</a>`
     longUrl.innerHTML = links.long.substring(0, 25).concat('...');
+}
+
+copyIcon.onclick = () => {
+    let shortUrlText = shortUrl.innerText;
+    navigator.clipboard.writeText(shortUrlText);
 }
 
 // ajax запрос в url_control и отображение новой сгенерированной ссылки

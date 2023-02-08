@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Short URLs</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
     <div class="message"></div>
     <div class="urls">
         <div class="url hidden">
-            <div class="id"></div>
+            <div class="id"><i class="uil uil-copy copy-icon"></i></div>
             <div class="short-url"><a href=""></a></div>
             <div class="long-url"></div>
         </div>
