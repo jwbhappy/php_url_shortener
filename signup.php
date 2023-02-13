@@ -19,6 +19,9 @@
             <a href="/signup.php">Sign up</a>
         </div>
     </header>
+    <div style="text-align: center;">
+        <p>this functionality coming soon...</p>
+    </div>
     <div class="main-page-title">
         <h1>Create an account</h1>
     </div>
@@ -26,7 +29,7 @@
         <form action="" method="post" id="form">
             <input id="input" type="email" class="logininput" name="email" placeholder="Your email">
             <input id="input" type="password" class="logininput" name="password" placeholder="Your password">
-            <input id="input" type="password" class="logininput" name="password" placeholder="Repeat your password">
+            <input id="input" type="password" class="logininput" name="password2" placeholder="Repeat your password">
             <input id="submit" type="submit" name="signup" value="Sign up">
         </form>
     </div>

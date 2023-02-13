@@ -19,6 +19,9 @@
             <a href="/signup.php">Sign up</a>
         </div>
     </header>
+    <div style="text-align: center;">
+        <p>this functionality coming soon...</p>
+    </div>
     <div class="main-page-title">
         <h1>Log in to your account</h1>
     </div>
