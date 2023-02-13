@@ -21,9 +21,9 @@ class Database{
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conn->exec("CREATE DATABASE IF NOT EXISTS urlshortener");
             $conn->exec("use $this->dbname");
-            $sql1 = "create table if not exists users (id int(11) primary key, email varchar(100), password varchar(100));";
+            $sql1 = "create table if not exists users (id int(11) auto_increment primary key, email varchar(100), password varchar(100));";
             $conn->exec($sql1);
-            $sql2 = "create table if not exists urls (id int(11) primary key, short_url varchar(300), orig_url varchar(2000), clicks integer(6), user_id integer, foreign key (user_id) references users(id));";
+            $sql2 = "create table if not exists urls (id int(11) auto_increment primary key, short_url varchar(300), orig_url varchar(2000), clicks integer(6), user_id integer, foreign key (user_id) references users(id));";
             $conn->exec($sql2);
 
             return $conn;
